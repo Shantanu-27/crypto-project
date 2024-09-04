@@ -11,7 +11,6 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />}/>
@@ -19,7 +18,6 @@ function App() {
         <Route path="/compare" element={<Compare />} />
         <Route path="/watchlist" element={<WatchList />} />
       </Routes>
-      </BrowserRouter>
     </div>
   );
 }
