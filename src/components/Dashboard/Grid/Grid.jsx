@@ -6,7 +6,7 @@ function Grid({ coin, key }) {
   return (
     <div className={`grid-container ${coin.price_change_percentage_24h<0 && "grid-container-red" }`}>
       <div className="info-flex">
-        <img src={coin.image} className="coin-logo" />
+        <img src={coin.image} className="coin-logo" alt=""/>
         <div className="name-col">
           <p className="coin-symbol">{coin.symbol}</p>
           <p className="coin-name">{coin.name}</p>

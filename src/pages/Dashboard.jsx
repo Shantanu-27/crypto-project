@@ -77,3 +77,7 @@ function Dashboard() {
 }
 
 export default Dashboard;
+//
+  //"homepage": "http://Shantanu-27.github.io/crypto-project",
+  //"deploy": "gh-pages -d build",
+  //,"devDependencies": {"gh-pages": "^6.1.1"}
