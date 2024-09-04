@@ -22,7 +22,7 @@ function Dashboard() {
   const onSearchChange = (e) => {
     setSearch(e.target.value);
   };
-
+// eslint-disable-next-line
   var filteredCoins = coins.filter((item) => {
     item.name.toLowerCase().includes(search.toLowerCase()) ||
       item.symbol.toLowercase().includes(search.toLowerCase());
