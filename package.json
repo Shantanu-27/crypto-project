@@ -1,5 +1,4 @@
 {
-  "homepage": "http://Shantanu-27.github.io/crypto-project",
   "name": "crypto-project",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +23,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,6 +47,5 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
   }
 }

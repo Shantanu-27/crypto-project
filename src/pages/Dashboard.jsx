@@ -24,8 +24,8 @@ function Dashboard() {
   };
   
   var filteredCoins = coins.filter((item) => {
-    item.name.toLowerCase().includes(search.toLowerCase()) ||
-      item.symbol.toLowercase().includes(search.toLowerCase());
+    return(item.name.toLowerCase().includes(search.toLowerCase()) ||
+      item.symbol.toLowerCase().includes(search.toLowerCase()));
   });
   useEffect(() => {
     axios

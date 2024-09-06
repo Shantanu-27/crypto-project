@@ -1,12 +1,11 @@
 import './App.css';
-import {Route, Routes } from 'react-router-dom';
+import {Navigate, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Coin from './pages/Coin';
 import Compare from './pages/Compare';
 import WatchList from './pages/WatchList';
 import React from 'react';
-
 
 function App() {
   return (
@@ -17,6 +16,7 @@ function App() {
         <Route path="/coin/:id" element={<Coin />} />
         <Route path="/compare" element={<Compare />} />
         <Route path="/watchlist" element={<WatchList />} />
+        <Route path="/crypto-project" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
   );
