@@ -24,10 +24,7 @@ function Coin() {
     if (id) {
       getData();
     }
-    else if(days){
-      handleDaysChange();
-    }
-  }, [id,days]);
+  }, [id]);
 
   async function getData() {
     const data = await getCoinData(id);
