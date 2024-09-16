@@ -3,9 +3,11 @@ import "./List.css";
 import { Tooltip } from "@mui/material";
 import { convertNumber } from "../../../functions/convertNumber";
 import { TrendingDownRounded, TrendingUpRounded } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
-function List({ coin, key }) {
+function List({coin}) {
   return (
+    <Link to={`/coin/${coin.id}`}>
     <tr className="list-row">
       <Tooltip title="Coin Logo" placement="bottom-end">
         <td className="td-image">
@@ -48,21 +50,21 @@ function List({ coin, key }) {
                   : "var(--green)",
             }}
           >
-            ${coin.current_price.toLocaleString()}
+           ${coin.current_price}
           </h3>
         </td>
       </Tooltip>
-      <Tooltip title="Total_volume" placement="botton-end">
+      <Tooltip title="Total_volume" placement="bottom-end">
         <td>
           <p className="total_volume td-right-align td-total-volume">
-            {coin.total_volume.toLocaleString()}
+            {coin.total_volume}
           </p>
         </td>
       </Tooltip>
       <Tooltip title="Market_cap" placement="bottom-end">
         <td className="desktop-td-mkt">
           <p className="total_volume td-right-align ">
-            ${coin.market_cap.toLocaleString()}
+            ${coin.market_cap}
           </p>
         </td>
       </Tooltip>
@@ -74,6 +76,7 @@ function List({ coin, key }) {
         </td>
       </Tooltip>
     </tr>
+    </Link>
   );
 }
 

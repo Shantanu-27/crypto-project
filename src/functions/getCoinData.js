@@ -1,19 +1,19 @@
 import axios from "axios";
 
-export const getCoinData = (id, setError) => {
-  const coin = axios
-    .get(`https://api.coingecko.com/api/v3/coins/${id}`)
-    .then((response) => {
-      if (response.data) {
-        return response.data;
-      }
+export const getCoinData = (id) => {
+  const coinData = axios
+    .get(`https://api.coingecko.com/api/v3/coins/${id}`, {
+      headers: {
+        accept: "application/json",
+        "x-cg-demo-api-key": "\tCG-dnXMZe4aPPnE8FUHDYckL5bX",
+      },
     })
-    .catch((e) => {
-      console.log(e.message);
-      if (setError) {
-        setError(true);
-      }
+    .then((response) => {
+      return response.data
+    })
+    .catch((error) => {
+      console.log("Error", error);
     });
 
-  return coin;
+  return coinData;
 };

@@ -4,6 +4,11 @@
     height: 100vh;
     background-color: var(--black);
     color: var(--blue);
-    position: absolute;
+    position: fixed;
     z-index: 1000;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
