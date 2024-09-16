@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/crypto-project/static/css/main.da367c9f.css",
-    "main.js": "/crypto-project/static/js/main.36b7eae8.js",
+    "main.css": "/crypto-project/static/css/main.2fbeae43.css",
+    "main.js": "/crypto-project/static/js/main.664a09df.js",
     "static/media/gradient.png": "/crypto-project/static/media/gradient.17a9e4f2bc18e4e30940.png",
     "static/media/iphone.png": "/crypto-project/static/media/iphone.30b0f0234a4726e8d246.png",
     "index.html": "/crypto-project/index.html",
-    "main.da367c9f.css.map": "/crypto-project/static/css/main.da367c9f.css.map",
-    "main.36b7eae8.js.map": "/crypto-project/static/js/main.36b7eae8.js.map"
+    "main.2fbeae43.css.map": "/crypto-project/static/css/main.2fbeae43.css.map",
+    "main.664a09df.js.map": "/crypto-project/static/js/main.664a09df.js.map"
   },
   "entrypoints": [
-    "static/css/main.da367c9f.css",
-    "static/js/main.36b7eae8.js"
+    "static/css/main.2fbeae43.css",
+    "static/js/main.664a09df.js"
   ]
 }
